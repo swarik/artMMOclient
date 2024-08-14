@@ -9,7 +9,7 @@
 using namespace std;
 using json = nlohmann::json;
 
-
+//
 static size_t WriteCallback(void *contents, size_t size, size_t nmemb, std::string *s);
 CURLcode GEquip(string Item_code, string Item_slot);
 CURLcode GRecycle(string Item_code, int Item_num);
