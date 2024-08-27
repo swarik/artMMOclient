@@ -4,7 +4,7 @@
 #include <curl/curl.h>
 #include <nlohmann/json.hpp>
 
-#define API_KEY "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InN3YXJnYSIsInBhc3N3b3JkX2NoYW5nZWQiOiIifQ.0PPcseUf-gJtqJrzA1oWAwsqm4J-0A61SdSl_yGCShA"
+#define API_KEY "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InN3YXJnYSIsInBhc3N3b3JkX2NoYW5nZWQiOiIifQ.0PPcseUf-gJtqJrzA1oWAwsqm4J-0A61SdSl_yGCShA" // this is your API)
 
 using namespace std;
 using json = nlohmann::json;
