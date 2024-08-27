@@ -22,7 +22,7 @@ CURLcode GStatus_not_parse();
 string GStatus(string);      // распарсенный статус перса
 int GStatus(string, string); // получение количества предметов инвентаря
 string readBuffer="";
-string pers = "Swarik";
+string pers = "Swarik";      /// CHANGE TO YOU PERS NAME by DEFAULT, and at the very bottom, please make the same changes !!!!!
 
 int main() {
 	bool Exit = false;
