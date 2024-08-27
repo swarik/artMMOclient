@@ -19,7 +19,7 @@ CURLcode GMove(int x,int y);
 CURLcode GFight();
 CURLcode GGet();
 CURLcode GStatus_not_parse();
-string GStatus(string); // распарсенный статус перса
+string GStatus(string);      // распарсенный статус перса
 int GStatus(string, string); // получение количества предметов инвентаря
 string readBuffer="";
 string pers = "Swarik";
@@ -128,7 +128,7 @@ int main() {
 			GMove(2,0);
 			sleep(12);
 
-			t1=90;
+			t1=96;
 			while(t1){
 				GGet();
 				sleep(25);
@@ -138,7 +138,7 @@ int main() {
 			GMove(1,5);
 			sleep(32);
 
-			t1=15;
+			t1=12;
 			while(t1){
 				GCraft("copper");
 				sleep(6);
@@ -150,7 +150,7 @@ int main() {
 			GMove(2,0);
 			sleep(32);
 
-			t1=90;
+			t1=96;
 			while(t1){
 				GGet();
 				sleep(25);
@@ -160,7 +160,7 @@ int main() {
 			GMove(1,5);
 			sleep(32);
 
-			t1=15;
+			t1=12;
 			while(t1){
 				GCraft("copper");
 				sleep(6);
@@ -172,7 +172,7 @@ int main() {
 			GMove(3,1);
 			sleep(32);
 
-			t1=10;
+			t1=3;
 			while(t1){
 				GCraft("copper_boots");
 				sleep(6);
@@ -181,10 +181,10 @@ int main() {
 
 			sleep(120);
 
-			GRecycle("copper_boots", 10);
+			GRecycle("copper_boots", 3);
 			sleep(60);
 
-			t1=5;
+			t1=1;
 			while(t1){
 				GCraft("copper_boots");
 				sleep(6);
@@ -193,7 +193,7 @@ int main() {
 
 			sleep(120);
 
-			GRecycle("copper_boots", 5);
+			GRecycle("copper_boots", 1);
 			sleep(60);
 
 
@@ -483,6 +483,7 @@ string GStatus(string s1){
 	int sel_pers;
 	if (pers == "Swarik") sel_pers = 0;
 	if (pers == "Kuzma") sel_pers = 1;
+	if (pers == "Juja") sel_pers = 2;
 	return to_string(j["data"][sel_pers][s1]);
 }
 int GStatus(string s1, string s2){
@@ -495,6 +496,7 @@ int GStatus(string s1, string s2){
 	int sel_pers;
 	if (pers == "Swarik") sel_pers = 0;
 	if (pers == "Kuzma") sel_pers = 1;
+	if (pers == "Juja") sel_pers = 2;
 	int max_inv_slots = 20;
 	int s = 255;
 	for(int i = 0; i < max_inv_slots ; i++){
