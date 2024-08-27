@@ -119,7 +119,7 @@ int main() {
 			}
 			else cout << What_code << ": " << GStatus(What_code);
 		}
-		if (command == "scenario"){              // ПРОКАЧКА СКИЛЛА - scenario
+		if (command == "scenario"){              // ПРОКАЧКА СКИЛЛА - scenario (for example)
 			int t1;
 
 		while(true){
@@ -481,7 +481,7 @@ string GStatus(string s1){
 	json j = json::parse(readBuffer);
 	readBuffer.clear();
 	int sel_pers;
-	if (pers == "Swarik") sel_pers = 0;
+	if (pers == "Swarik") sel_pers = 0;          /// CHANGE TO YOU PERS NAME !!!!!
 	if (pers == "Kuzma") sel_pers = 1;
 	if (pers == "Juja") sel_pers = 2;
 	return to_string(j["data"][sel_pers][s1]);
@@ -494,7 +494,7 @@ int GStatus(string s1, string s2){
 	json j = json::parse(readBuffer);
 	readBuffer.clear();
 	int sel_pers;
-	if (pers == "Swarik") sel_pers = 0;
+	if (pers == "Swarik") sel_pers = 0;          /// CHANGE TO YOU PERS NAME !!!!!
 	if (pers == "Kuzma") sel_pers = 1;
 	if (pers == "Juja") sel_pers = 2;
 	int max_inv_slots = 20;
