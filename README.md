@@ -1,4 +1,4 @@
-This is simply console half-automated client for interestind game.
+This is simply console half-automated client for interesting game.
 Insert you API, and names of your caracters below to source code (for correct parse status pers).
 Type 'help' for view all commands.
 
