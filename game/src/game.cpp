@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include <unistd.h> // unix timer ( <windows.h> для Win32 (Sleep(5)) || <dos.h> для Win32 (delay(5)) )   //
+#include <unistd.h> // unix timer ( <windows.h> для Win32 (Sleep(5 * 1000?)) || <dos.h> для Win32 (delay(5 * 1000?)) )   //
 #include <curl/curl.h>
 #include <nlohmann/json.hpp>
 
